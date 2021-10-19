@@ -1,16 +1,16 @@
 import Header from './components/header';
-import Home from './components/home-page';
+import Home from './components/home';
+import Nav from './components/navbar';
 import './style/css/style.css';
 
-function App() {
+
+export default function App() {
   return (
     
     <div className='App'>
       <Header />
-      <Home />
+      <Nav />
     </div>
     
   );
 }
-
-export default App;
