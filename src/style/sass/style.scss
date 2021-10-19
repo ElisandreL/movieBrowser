@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    background-color: #15141F;
+    color: white;
+    
+    //justify-content: center;
+}
+
+@media screen and (min-width: 1024px) {
+    //later
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    //later
+}
+
+@media screen and (max-width: 767px) {
+ 
+        .App-logo {
+            width: 50%;
+        }
+        
+        div {
+            background-color: transparent;
+            border: 2px solid white;
+        }
+    }

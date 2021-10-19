@@ -1,0 +1,28 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #15141F;
+  color: white;
+}
+
+@media screen and (max-width: 767px) {
+  .App-logo {
+    width: 50%;
+  }
+  div {
+    background-color: transparent;
+    border: 2px solid white;
+  }
+}
+/*# sourceMappingURL=style.css.map */
