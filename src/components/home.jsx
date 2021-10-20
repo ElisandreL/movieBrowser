@@ -30,27 +30,31 @@ import { Component } from "react";
 // }
 
 
-export default class Home extends React.Component {
-    state = {
-        movies: []
-    }
+// export default class Home extends React.Component {
+//     state = {
+//         movies: []
+//     }
 
-    componentDidMount() {
-        axios.get('https://api.themoviedb.org/3/trending/movie/day?api_key=6af4c8b3996dc77c45a6ed3f072e87c5')
-            .then(res => {
-                console.log(res)
-                this.setState({ movies: res.data.results })
-            })
-    }
+//     componentDidMount() {
+//         axios.get('https://api.themoviedb.org/3/trending/movie/day?api_key=6af4c8b3996dc77c45a6ed3f072e87c5')
+//             .then(res => {
+//                 console.log(res)
+//                 this.setState({ movies: res.data.results })
+//             })
+//     }
 
-    render() {
-        return (
-            <ul>
-                {this.state.movies.map(movie => <li key={movie.id}> {movie.title} </li>)}
-            </ul>
+//     render() {
+//         return (
+//             <ul>
+//                 {this.state.movies.map(movie => <li key={movie.id}> {movie.title} </li>)}
+//             </ul>
             
-        )
-    }
+//         )
+//     }
+// }
+
+function Home(props) {
+    
 }
 
 // function Home() {
