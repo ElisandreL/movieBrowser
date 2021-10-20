@@ -4,6 +4,7 @@ import { render } from "@testing-library/react";
 import { Component } from "react";
 
 
+// Not bad but not the best :
 // export default function Home() {
 //     const [movie, setMovie] = useState([]);
 
