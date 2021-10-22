@@ -7,29 +7,17 @@ import {
     Route,
     Link
   } from "react-router-dom";
-import Home from "./home";
-import Discover from "./discover";
-import Details from "./details";
+import Home from "../pages/home";
+import Discover from "../pages/discover";
+import Details from "../pages/details";
 
   export default function Nav() {
       return (
-        <Router>
             <div>
-                <Switch>
-                    <Route path="/details">
-                        <Details />
-                    </Route>
-                    <Route path='/discover'>
-                        <Discover />
-                    </Route>
-                    <Route path='/'>
-                        <Home />
-                    </Route>
-                </Switch>
                 <nav>
                     <ul>
                         <li>
-                            <Link to="/">Home</Link>
+                            <Link to="/home">Home</Link>
                         </li>
                         <li>
                             <Link to="/details">Details</Link>
@@ -40,6 +28,5 @@ import Details from "./details";
                     </ul>
                 </nav>
             </div>
-        </Router>
       )
   }
